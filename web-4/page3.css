@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.top-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 16px;
+  font-size: 0.72rem;
+  background-color: #f5f5f5;
+}
+
+.top-banner a {
+  color: #0070c9;
+  text-decoration: underline;
+}
+
+.close-x {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.site-header {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-bar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-link {
+  font-size: 0.78rem;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.08em;
+}
+
+.nav-link.holiday {
+  color: #c59e24;
+}
+
+.nav-logo img {
+  width: 110px;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  border-radius: 18px;
+  border: 1px solid #e2e2e2;
+  padding: 6px 30px 6px 12px;
+  font-size: 0.78rem;
+  width: 150px;
+  background-color: #fafafa;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.page-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px 80px;
+}
+
+.wishlist-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.wishlist-hero p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.outline-btn {
+  padding: 10px 24px;
+  border-radius: 2px;
+  border: 1px solid #111;
+  background-color: #fff;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 40px 0 30px;
+}
+
+.wishlist-empty h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.wishlist-empty p {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.primary-btn {
+  padding: 10px 26px;
+  border-radius: 2px;
+  border: 1px solid #111;
+  background-color: #111;
+  color: #fff;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wishlist-banner {
+  margin-top: 60px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 260px;
+  background-image: url("https://assets.bosecreative.com/transform/37efb2c3-b742-4c99-8ea7-0461e0fabcf2/UOEBLE26_QCUHII26_SLMII_HolidayHarder_HP_Hero_Desktop_3840x2160?io=transform:fit,height:800,width:1600&quality=90");
+  background-size: cover;
+  background-position: center;
+}
+
+.perks-section {
+  margin-top: 60px;
+}
+
+.perks-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 8px;
+}
+
+.perks-section p {
+  font-size: 0.85rem;
+  color: #555;
+  max-width: 720px;
+  margin-bottom: 26px;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px 18px;
+}
+
+.perk-card {
+  font-size: 0.8rem;
+}
+
+.perk-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.perk-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.perk-card p {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* .site-footer {
+  border-top: 1px solid #eee;
+  padding: 26px 16px 40px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.site-footer > * {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accordion {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.apps-row {
+  display: flex;
+  gap: 20px;
+  padding: 22px 0 16px;
+}
+
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.app-main {
+  background-color: #000;
+  color: #fff;
+}
+
+.app-connect {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.app-qce {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-row {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.75rem;
+}
+
+.legal-top,
+.legal-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .perks-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .apps-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.bose-footer {
+    background-color: #ffffff;
+    padding: 40px 40px 20px;
+    margin-top: 80px;
+    border-top: 1px solid #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+.bose-footer-breadcrumb {
+    font-size: 0.9rem;
+    color: #808080;
+    margin-bottom: 24px;
+}
+
+.bose-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-columns {
+    display: flex;
+    flex: 1 1 600px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-column {
+    min-width: 150px;
+}
+
+.bose-footer-column h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bose-footer-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #555555;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+.bose-footer-link:hover {
+    color: #000000;
+}
+
+.bose-footer-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 170px;
+}
+
+.bose-footer-app-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+}
+
+.bose-footer-app-icon {
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.bose-footer-app-connect {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d0d0d0;
+}
+
+.bose-footer-app-qce {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.bose-footer-app-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.bose-footer-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+.bose-social-icon {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #111111;
+    text-decoration: none;
+}
+
+.bose-footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 24px;
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.bose-footer-copy {
+    color: #666666;
+}
+
+.bose-footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+.bose-footer-legal-link {
+    color: #555555;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.bose-footer-legal-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .bose-footer {
+        padding: 32px 20px 16px;
+    }
+
+    .bose-footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bose-footer-apps {
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .bose-footer-legal-links {
+        justify-content: flex-start;
+    }
+}

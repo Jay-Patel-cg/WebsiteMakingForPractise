@@ -1,0 +1,747 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.headermain{
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    color: black;
+}
+.headerLeft{
+    display: flex;
+    color: black;
+    border: 1px solid black;
+    width: fit-content;
+    gap: 15px;
+    /* margin-right: 100px; */
+}
+.icon{
+    font-size: 1.3rem;
+}
+.headerCenter{
+    border: 1px solid black;
+    margin-left: 120px;
+}
+.headermain , .headerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerRight{
+    display: flex;
+    /* border: 1px solid blue; */
+    gap: 15px;
+    margin-left: 200px;
+    justify-content: space-around;
+    width: 30%;
+}
+.iicon{
+    height: 25px;
+    width: 25px;
+}
+#sss{
+    margin-left: 10px;
+}
+.searchbar{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainImage{
+    background-image: url(https://assets.bosecreative.com/transform/37efb2c3-b742-4c99-8ea7-0461e0fabcf2/UOEBLE26_QCUHII26_SLMII_HolidayHarder_HP_Hero_Desktop_3840x2160?io=transform:fit,height:2160,width:3840&format=avif&quality=95);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 675px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+}
+.mainImage h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.mainImage h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.imgBox{
+    height: 55px;
+    width: 110px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.buyOptions{
+    height: 90px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+.optns{
+    width: 24%;
+    /* border: 1px solid blue; */
+    background-color: lightgray;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.dealsWritten{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 150px;
+}
+.product{
+    height: fit-content;
+    width: 100%;
+    /* border: 1px solid blue; */
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+.productsOptns{
+    height: 100%;
+    width: 29%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+.proooo{
+    background-color: rgb(248, 247, 246);
+    border-radius: 30px;
+}
+/* #hearttt{
+    display: flex;
+    justify-content: end;
+    border: 1px solid blue;
+} */
+.productList-heart{
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid blue; */
+}
+#iiimg{
+    /* background-color: white; */
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 80%;
+}
+.productList-color{
+    /* border: 1px solid blue; */
+    padding-left: 10px;
+}
+.productList-color p{
+    font-size: 1.4rem;
+}
+.productList-colorOptn{
+    /* border: 1px solid blue; */
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.colorsss{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colo{
+    height: 38px;
+    width: 38px;
+    /* border: 1px solid blue; */
+    border-radius: 100%;
+}
+.colorFirst{
+    background-color: rgb(146, 137, 130);
+}
+.colorSecond{
+    background-color: rgb(72, 110, 138);
+}
+.colorThird{
+    background-color: rgb(34, 75, 97);
+}
+.colorForth{
+    background-color: rgb(245, 244, 187);
+}
+.colorFifth{
+    background-color: rgb(219, 217, 211);
+}
+.colorSixth{
+    background-color: black;
+}
+/* .productList-describ{
+    border: 1px solid blue;
+    margin-top: 2px;
+} */
+.productList-describ p{
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+.productList-starts{
+    /* border: 1px solid blue; */
+    /* margin-top: 10px; */
+    height: 5%;
+    display: flex;
+    padding-left: 10px;
+}
+.stars svg{
+    height: 30px;
+    width: 30px;
+}
+#rate{
+    font-size: 1.2rem;
+    padding-top: 4px;
+}
+#rate2{
+    font-size: 1.2rem;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+.productList-add{
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+}
+.shopOtns{
+    height: 80%;
+    width: 30%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: 10px;
+    margin-top: 80px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.imageSecond{
+    background-image: url(https://assets.bosecreative.com/transform/a0c31bb2-b1fe-4a60-b281-8675df46ae38/UOEBLE25-MoonlightGrey_eGiftCard_HolidayHarder_HP_SecondaryHero_Desktop_2716x1506?io=transform:fit,height:1506,width:2716&format=avif&quality=95);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 93%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+}
+.ttexxt{
+    color: white;
+}
+.ttexxt p{
+    font-size: 2rem;
+}
+.ttexxt h1{
+    font-size: 4rem;
+}
+.gotoOP{
+    height: 55px;
+    width: 160px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+.imageThird{
+    height: 900px;
+    width: 93%;
+    /* border: 1px solid blue; */
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imageFirstt{
+    background-image: url(https://assets.bosecreative.com/transform/a97355f5-0a5d-4bfd-993b-71feb7ad6358/Giftbox_HolidayHarder_Country_2_up_Product_Card_Desktop_1332x1506?io=transform:fit,height:1506,width:1332&format=avif&quality=95);
+    height: 100%;
+    width: 48%;
+    /* border: 1px solid blue; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+}
+.imageSecondd{
+    background-image: url(https://assets.bosecreative.com/transform/33733590-4018-449c-8442-ed03b88b35fc/UOEBLE26-DriftwoodSand_HolidayHarder_EarlyDeals_Country_2_up_Product_Card_Desktop_1332x1506?io=transform:fit,height:1506,width:1332&format=avif&quality=95);
+    height: 100%;
+    width: 48%;
+    /* border: 1px solid blue; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+}
+.imageFirstt{
+    color: white;
+}
+.imageSecondd{
+    color: white;
+}
+.ttext h1{
+    font-size: 3rem;
+}
+.ttext h2{
+    font-size: 2rem;
+}
+.imgFourth{
+    background-image: url(https://assets.bosecreative.com/transform/22a1b8eb-5b66-49dc-ab9c-0c491b7daa29/eGiftCard_HolidayHarder_LP_Hero_Desktop_3840x2160?io=transform:fit,height:2160,width:3840&format=avif&quality=95);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 93%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    color: white;
+}
+#moreBox{
+    width: 190px;
+}
+.imgFourth h1{
+    font-size: 4rem;
+}
+.imgFourth h2{
+    font-size: 2rem;
+}
+.imgFifth{
+    background-image: url(https://assets.bosecreative.com/transform/39a7a70c-1108-47f1-a14e-c7b841bf0f95/15_shot10_porsche_myron_07153_v2?io=transform:fit,height:1280,width:1920&quality=95);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 93%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    color: white;
+}
+.imgFifth h1{
+    font-size: 4rem;
+}
+.imgFifth h2{
+    font-size: 2rem;
+}
+.downSection{
+    font-size: 1.6rem;
+    font-weight: 1000;
+    padding-left: 50px;
+    margin-top: 150px;
+}
+.downmaking{
+    height: 500px;
+    width: 93%;
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.downoptns{
+    height: 100%;
+    width: 23%;
+    /* border: 1px solid blue; */
+}
+.emoji{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backEmoji{
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backEmoji svg{
+    height: 80px;
+    width: 80px;
+}
+.writeDown{
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+}
+.h333{
+    margin-top: 20px;
+}
+.learnMore{
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+}
+.downImgs{
+    /* border: 1px solid blue; */
+    height: 1400px;
+    width: 96.4%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 5px;
+}
+.upDownIgms{
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.rightDownImg{
+    height: 100%;
+    width: 45%;
+    /* border: 1px solid blue; */
+    gap: 5px;
+}
+.leftDownImgs{
+    height: 100%;
+    width: 45%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.DownFourImggs{
+    /* border: 1px solid blue; */
+    height: 50%;
+    width: 50%;
+    gap: 5px;
+}
+.downDownImgs{
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.downnWritte{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /* border: 1px solid blue; */
+    padding-left: 50px;
+}
+.downnWritte h1{
+    font-size: 3rem;
+}
+/* .downImgs{
+    
+} */
+.rightDownImg img{
+    height: 100%;
+    width: 100%;
+}
+.DownFourImggs img{
+    height: 100%;
+    width: 100%;
+}
+.downBttn{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downBttn button{
+    height: 45px;
+    width: 200px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+.downWritting{
+    padding-left: 50px;
+    margin-top: 100px;
+}
+.seconnnnnnd{
+    display: flex;
+    flex-direction: row;
+}
+.seconnnnnnd h3{
+    margin-top: 8px;
+    color: blue;
+}
+.downmiddele h6{
+    margin-top: 10px;
+}
+.hooomeicon{
+    /* border: 1px solid blue; */
+    margin-top: 100px;
+    font-size: 1.2rem;
+    padding-left: 50px;
+}
+/* .fooooter{
+    border: 1px solid blue;
+    height: 500px;
+    width: 100%;
+}
+.footerMain{
+    height: 400px;
+    width: 100%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+}
+.footerOptns{
+    height: 100%;
+    width: 20%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.footerlink{
+    color: black;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+.boldF{
+    font-size: 1.2rem;
+    font-weight: 1900;
+} */
+
+.bose-footer {
+    background-color: #ffffff;
+    padding: 40px 40px 20px;
+    margin-top: 80px;
+    border-top: 1px solid #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+.bose-footer-breadcrumb {
+    font-size: 0.9rem;
+    color: #808080;
+    margin-bottom: 24px;
+}
+
+.bose-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-columns {
+    display: flex;
+    flex: 1 1 600px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-column {
+    min-width: 150px;
+}
+
+.bose-footer-column h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bose-footer-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #555555;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+.bose-footer-link:hover {
+    color: #000000;
+}
+
+.bose-footer-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 170px;
+}
+
+.bose-footer-app-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+}
+
+.bose-footer-app-icon {
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.bose-footer-app-connect {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d0d0d0;
+}
+
+.bose-footer-app-qce {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.bose-footer-app-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.bose-footer-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+.bose-social-icon {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #111111;
+    text-decoration: none;
+}
+
+.bose-footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 24px;
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.bose-footer-copy {
+    color: #666666;
+}
+
+.bose-footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+.bose-footer-legal-link {
+    color: #555555;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.bose-footer-legal-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .bose-footer {
+        padding: 32px 20px 16px;
+    }
+
+    .bose-footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bose-footer-apps {
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .bose-footer-legal-links {
+        justify-content: flex-start;
+    }
+}

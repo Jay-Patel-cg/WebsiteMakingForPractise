@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-bar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-link {
+  font-size: 0.78rem;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.08em;
+}
+
+.nav-link.holiday {
+  color: #c59e24;
+}
+
+.nav-logo img {
+  width: 110px;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  border-radius: 18px;
+  border: 1px solid #e2e2e2;
+  padding: 6px 30px 6px 12px;
+  font-size: 0.78rem;
+  width: 150px;
+  background-color: #fafafa;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* MAIN */
+.page-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px 80px;
+}
+
+/* CART EMPTY SECTION */
+.cart-empty h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cart-empty p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.primary-btn {
+  padding: 10px 26px;
+  border-radius: 2px;
+  border: 1px solid #111;
+  background-color: #fff;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* RECOMMENDED */
+.recommended {
+  margin-top: 60px;
+}
+
+.recommended h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.product-row {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.product-card {
+  position: relative;
+  flex: 1;
+  background-color: #fafafa;
+  padding: 18px 16px 20px;
+  border-radius: 6px;
+  min-width: 0;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* simple image placeholders (you can replace with real images) */
+.product-img-1 {
+  background-image: url("https://assets.bosecreative.com/transform/37efb2c3-b742-4c99-8ea7-0461e0fabcf2/UOEBLE26_QCUHII26_SLMII_HolidayHarder_HP_Hero_Desktop_3840x2160?io=transform:fit,height:600,width:800&quality=80");
+}
+
+.product-img-2 {
+  background-image: url("https://assets.bosecreative.com/transform/a97355f5-0a5d-4bfd-993b-71feb7ad6358/Giftbox_HolidayHarder_Country_2_up_Product_Card_Desktop_1332x1506?io=transform:fit,height:600,width:800&quality=80");
+}
+
+.product-img-3 {
+  background-image: url("https://assets.bosecreative.com/transform/33733590-4018-449c-8442-ed03b88b35fc/UOEBLE26-DriftwoodSand_HolidayHarder_EarlyDeals_Country_2_up_Product_Card_Desktop_1332x1506?io=transform:fit,height:600,width:800&quality=80");
+}
+
+.color-label {
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.color-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.color-dot.active {
+  border-color: #111;
+}
+
+/* example colors */
+.c1 { background: #e5dfd7; }
+.c2 { background: #d0d0d0; }
+.c3 { background: #999; }
+.c4 { background: #111; }
+
+.c5 { background: #8b004b; }
+.c6 { background: #222; }
+.c7 { background: #ff7f7f; }
+.c8 { background: #ffcfdf; }
+
+.c9  { background: #ffd1de; }
+.c10 { background: #f5f5f5; }
+.c11 { background: #f3c0ff; }
+.c12 { background: #d6e0ff; }
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background-color: #111;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.product-name {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+.stars {
+  font-size: 0.8rem;
+}
+
+.rating-link {
+  text-decoration: none;
+  color: #0070c9;
+  font-size: 0.7rem;
+}
+
+.price {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.price-now {
+  margin-right: 6px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.price-save {
+  font-size: 0.8rem;
+  color: #1a8a2a;
+}
+
+/* carousel controls */
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.dot.active {
+  background-color: #111;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.circle-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* WHY BOSE */
+.why-bose {
+  margin-top: 60px;
+}
+
+.why-bose h2 {
+  font-size: 1.9rem;
+  margin-bottom: 26px;
+}
+
+.benefits-row {
+  display: flex;
+  gap: 24px;
+}
+
+.benefit-card {
+  flex: 1;
+  text-align: left;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.benefit-card a {
+  font-size: 0.8rem;
+  color: #0070c9;
+  text-decoration: none;
+}
+
+/* SIGNUP */
+.signup-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.signup-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.signup-section p {
+  font-size: 0.85rem;
+  color: #555;
+  max-width: 560px;
+  margin: 0 auto 26px;
+}
+
+.signup-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signup-input-wrap input {
+  border: none;
+  border-bottom: 1px solid #111;
+  padding: 8px 0;
+  min-width: 260px;
+  font-size: 0.85rem;
+}
+
+.signup-input-wrap input:focus {
+  outline: none;
+}
+
+.signup-btn {
+  padding: 9px 22px;
+  border-radius: 2px;
+  border: 1px solid #111;
+  background-color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* .site-footer {
+  border-top: 1px solid #eee;
+  padding: 30px 16px 40px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.site-footer > * {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accordion {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.apps-row {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0 16px;
+}
+
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.app-main {
+  background-color: #000;
+  color: #fff;
+}
+
+.app-connect {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.app-qce {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-row {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.75rem;
+}
+
+.legal-top,
+.legal-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-row,
+  .benefits-row,
+  .apps-row {
+    flex-direction: column;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .signup-input-wrap input {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+} */
+.bose-footer {
+    background-color: #ffffff;
+    padding: 40px 40px 20px;
+    margin-top: 80px;
+    border-top: 1px solid #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+.bose-footer-breadcrumb {
+    font-size: 0.9rem;
+    color: #808080;
+    margin-bottom: 24px;
+}
+
+.bose-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-columns {
+    display: flex;
+    flex: 1 1 600px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.bose-footer-column {
+    min-width: 150px;
+}
+
+.bose-footer-column h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bose-footer-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #555555;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+.bose-footer-link:hover {
+    color: #000000;
+}
+
+.bose-footer-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 170px;
+}
+
+.bose-footer-app-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+}
+
+.bose-footer-app-icon {
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.bose-footer-app-connect {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d0d0d0;
+}
+
+.bose-footer-app-qce {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.bose-footer-app-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.bose-footer-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+.bose-social-icon {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #111111;
+    text-decoration: none;
+}
+
+.bose-footer-bottom {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 24px;
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.bose-footer-copy {
+    color: #666666;
+}
+
+.bose-footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+.bose-footer-legal-link {
+    color: #555555;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.bose-footer-legal-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .bose-footer {
+        padding: 32px 20px 16px;
+    }
+
+    .bose-footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bose-footer-apps {
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .bose-footer-legal-links {
+        justify-content: flex-start;
+    }
+}
